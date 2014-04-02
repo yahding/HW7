@@ -6,6 +6,5 @@ Partial Class login_login
 
         Login1.Focus()
 
-
     End Sub
 End Class
