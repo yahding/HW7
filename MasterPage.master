@@ -21,6 +21,7 @@
 
         </div>
         <div id="menu">
+            
 
             <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticDisplayLevels="1">
                 <LevelMenuItemStyles>
@@ -31,7 +32,8 @@
             </asp:Menu> 
 
             <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false"  />
-
+            
+            <asp:LoginStatus ID="LoginStatus1" runat="server" CssClass="level1"/>
         </div>
         <div id="main">
 

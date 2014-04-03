@@ -1,4 +1,4 @@
-﻿body {}
+﻿body {background:pink}
 
 /*DIV formatting*/
 #container {background:pink;padding:20px;margin:0 auto;border:1px solid black;width:900px;}
@@ -8,7 +8,7 @@
 
 #main {background:white;padding:10px;margin:0 auto; border-left:1px solid black; border-right:1px solid black;}
 
-#footer {background:green;color:white;padding:10px;margin:0 auto;border:1px solid black;}
+#footer {background:#2F4F4F;color:white;padding:10px;margin:0 auto;border:1px solid black;}
 
 .hdr_img {float:right; margin:0; padding:0; border:0;}
 
@@ -33,3 +33,4 @@
             font-size :small;
             background-color :#E0FFFF;
 }
+
