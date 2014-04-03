@@ -8,7 +8,7 @@
 
 #main {background:white;padding:10px;margin:0 auto; border-left:1px solid black; border-right:1px solid black;}
 
-#footer {background:#2F4F4F;color:white;padding:10px;margin:0 auto;clear:both;text-align:center ;border:1px solid black;}
+#footer {background:#2F4F4F;color:white;padding:10px;margin:0 auto;clear:both; text-align:center ;border:1px solid black;}
 #footer p { margin:0; font-style:italic; text-align:center; font-size:small; }
 
 .hdr_img {float:right; margin:0; padding:0; border:0;}
