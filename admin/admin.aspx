@@ -1,18 +1,13 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="admin.aspx.vb" Inherits="admin_admin" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/HW7/MasterPage.master" AutoEventWireup="false" CodeFile="admin.aspx.vb" Inherits="HW7_admin_admin" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    
-        Welcome to our administration section 
 
-    </div>
-    </form>
-</body>
-</html>
+
+
+    This is the admin page
+
+</asp:Content>
+

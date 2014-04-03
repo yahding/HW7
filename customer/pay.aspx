@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/HW7/MasterPage.master" AutoEventWireup="false" CodeFile="sales.aspx.vb" Inherits="HW7_sales_sales" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/HW7/MasterPage.master" AutoEventWireup="false" CodeFile="pay.aspx.vb" Inherits="HW7_customer_pay" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>

@@ -1,18 +1,22 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="default.aspx.vb" Inherits="_default" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/HW7/MasterPage.master" AutoEventWireup="false" CodeFile="default.aspx.vb" Inherits="HW7_default" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
 
-     welcome to our website
 
-    </div>
-    </form>
-</body>
-</html>
+
+
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+    <h3>Main body text</h3>
+    
+   <p> dfds  </p> 
+     
+   <p> sdf  </p> 
+
+   <p>  df </p>  
+
+</asp:Content>
+

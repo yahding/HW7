@@ -1,5 +1,5 @@
 ﻿
-Partial Class HW7_admin_admin
+Partial Class HW7_search
     Inherits System.Web.UI.Page
 
 End Class
