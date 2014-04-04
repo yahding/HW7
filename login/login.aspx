@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+    <div><center>
     
 
 
@@ -16,7 +16,7 @@
         </asp:Login>
     
 
-
+    </center>
     </div>
     </form>
 </body>

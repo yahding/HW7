@@ -27,16 +27,23 @@
 </asp:SqlDataSource>
     <br />
 
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="SqlGeckoSource" Width="450px" pagesize="5" PagerSettings-Position="TopAndBottom">
+<center>
+    <asp:GridView ID="GridView1" runat="server" CSSClass="gv"
+        AutoGenerateColumns="False" pagesize="5" 
+        PagerSettings-Position="TopAndBottom" GridLines="None"
+        DataKeyNames="ID" DataSourceID="SqlGeckoSource" Width="450px"  AllowSorting="True" AllowPaging="True">
         <Columns>
             <asp:BoundField DataField="name" HeaderText="Gecko Name" SortExpression="name" />
             <asp:BoundField DataField="gender" HeaderText="Gecko Gender" SortExpression="gender" />
             <asp:BoundField DataField="size" HeaderText="Gecko Size" SortExpression="size" />
-            <asp:BoundField DataField="note" HeaderText="Note" SortExpression="note" />
+            <asp:HyperLinkField DataNavigateUrlFields="ID" DataNavigateUrlFormatString="detailview.aspx?ID{0}" HeaderText="Detail View" SortExpression="ID" Text="Select">
+            <HeaderStyle ForeColor="Black" />
+            </asp:HyperLinkField>
         </Columns>
 
 <PagerSettings Position="TopAndBottom"></PagerSettings>
     </asp:GridView>
+</center> 
     <br />
 
 </asp:Content>

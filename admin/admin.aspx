@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="admin.aspx.vb" Inherits="HW7_admin_admin" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    Welcome Back Dear Admin
+    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -41,17 +41,23 @@
     </asp:SqlDataSource>
 
     <br />
+    <center>   
+        <h2> Welcome to Admin Page</h2>
+        <br />
 
-    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" Width="500px">
+    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
+        AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ID" 
+        DataSourceID="SqlDataSource1" Width="500px" CSSClass="gv"
+        pagesize="5" PagerSettings-Position="TopAndBottom" GridLines="None">
         <Columns>
             <asp:BoundField DataField="name" HeaderText="Gecko Name" SortExpression="name" />
             <asp:BoundField DataField="gender" HeaderText="Gecko Gender" SortExpression="gender" />
             <asp:BoundField DataField="size" HeaderText="Gecko Size" SortExpression="size" />
             <asp:BoundField DataField="note" HeaderText="Gecko Note" SortExpression="note" />
-            <asp:CommandField ShowEditButton="True" />
+            <asp:HyperLinkField DataNavigateUrlFields="ID" DataNavigateUrlFormatString="edit.aspx?ID={0}" HeaderText="Editing" SortExpression="ID" Text="Select" />
         </Columns>
     </asp:GridView>
- 
+    </center>
 
 </asp:Content>
 

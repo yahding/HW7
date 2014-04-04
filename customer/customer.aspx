@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 
-    Detail View In Customer Version
+    
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -33,15 +33,29 @@
             <asp:Parameter Name="ID" Type="Int32" />
         </UpdateParameters>
     </asp:SqlDataSource>
-
+<center>
+    <h2>Detail View In Customer Version</h2>
     <br />
-    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="SqlDataSource1">
+    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
+        AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" 
+        AllowSorting="True"
+        CSSClass="gv" 
+        pagesize="5" 
+        PagerSettings-Position="TopAndBottom" 
+        GridLines="None"
+        >
         <Columns>
             <asp:BoundField DataField="name" HeaderText="Gecko Name" SortExpression="name" />
             <asp:BoundField DataField="gender" HeaderText="Gecko Gender" SortExpression="gender" />
             <asp:BoundField DataField="size" HeaderText="Gecko Size" SortExpression="size" />
-            <asp:HyperLinkField DataNavigateUrlFields="ID" DataNavigateUrlFormatString="view.aspx?ID={0}" HeaderText="DetailView" Text="Select" />
+            <asp:HyperLinkField DataNavigateUrlFields="ID" DataNavigateUrlFormatString="view.aspx?ID={0}" HeaderText="DetailView" Text="Select" >
+            <HeaderStyle ForeColor="Black" />
+            </asp:HyperLinkField>
         </Columns>
+
+<PagerSettings Position="TopAndBottom"></PagerSettings>
     </asp:GridView>
+
+</center>
     </asp:Content>
 

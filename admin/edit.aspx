@@ -38,16 +38,28 @@ Editing Gecko's Information
     </asp:SqlDataSource>
 
     <br />
-    
-    <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="375px" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" DefaultMode="Edit">
+    <center>
+        <h2>Editing Section</h2>
+    <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="375px" AllowPaging="True" 
+            CSSClass="cc" 
+            Headerstyle-CssClass="ccheader"
+            FieldHeaderStyle-CssClass="ccfieldheader"
+            ItemStyle-CssClass="ccitem"
+            PagerStyle-CssClass="ccpager"
+            CommandRowStyle-CssClass="cccommand"
+            AlternatingRowStyle-CssClass="alt" 
+            AlternatingColumnStyle-CssClass="col"
+        AutoGenerateRows="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" DefaultMode="Edit">
         <Fields>
-            <asp:BoundField DataField="ID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="ID" />
-            <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
-            <asp:BoundField DataField="gender" HeaderText="gender" SortExpression="gender" />
-            <asp:BoundField DataField="size" HeaderText="size" SortExpression="size" />
-            <asp:BoundField DataField="note" HeaderText="note" SortExpression="note" />
+            <asp:BoundField DataField="ID" HeaderText="Gecko ID" InsertVisible="False" ReadOnly="True" SortExpression="ID" />
+            <asp:BoundField DataField="name" HeaderText="Gecko Name" SortExpression="name" />
+            <asp:BoundField DataField="gender" HeaderText="Gecko Gender" SortExpression="gender" />
+            <asp:BoundField DataField="size" HeaderText="Gecko Size" SortExpression="size" />
+            <asp:BoundField DataField="note" HeaderText="Note" SortExpression="note" />
+            <asp:DynamicField DataField="gecko" HeaderText="Gecko Image" />
+            <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" />
         </Fields>
 </asp:DetailsView>
-
+</center>
 </asp:Content>
 

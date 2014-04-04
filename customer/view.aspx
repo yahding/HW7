@@ -11,9 +11,20 @@
         </SelectParameters>
     </asp:SqlDataSource>
     <br />
+    <center>
 
+    <h2>View Details</h2>
+        <br />
     <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="375px" 
         AllowPaging="True" AutoGenerateRows="False" DataKeyNames="ID" 
+         CSSClass="cc" 
+            Headerstyle-CssClass="ccheader"
+            FieldHeaderStyle-CssClass="ccfieldheader"
+            ItemStyle-CssClass="ccitem"
+            PagerStyle-CssClass="ccpager"
+            CommandRowStyle-CssClass="cccommand"
+            AlternatingRowStyle-CssClass="alt" 
+            AlternatingColumnStyle-CssClass="col"
         DataSourceID="SqlDataSource1">
         <Fields>
             <asp:DynamicField DataField="ID" HeaderText="ID" />
@@ -23,5 +34,6 @@
             <asp:BoundField DataField="note" HeaderText="Note" SortExpression="note" />
         </Fields>
     </asp:DetailsView>
+    </center>
 </asp:Content>
 

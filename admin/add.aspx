@@ -1,10 +1,15 @@
 ﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="add.aspx.vb" Inherits="admin_add" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    Add an New Gecko
+    
 </asp:Content>
-
+ 
+ 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+
+
+
+
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
         ConnectionString="<%$ ConnectionStrings:cs_GeckoData %>" 
         DeleteCommand="DELETE FROM [Gecko] WHERE [ID] = @ID" 
@@ -32,9 +37,21 @@
             <asp:Parameter Name="ID" Type="Int32" />
         </UpdateParameters>
     </asp:SqlDataSource>
-    <br />
-
-    <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="375px" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" DefaultMode="Insert">
+ <center>
+        <h2> Add an New Gecko</h2>
+        <br />
+    <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="375px"
+            CSSClass="cc" 
+            Headerstyle-CssClass="ccheader"
+            FieldHeaderStyle-CssClass="ccfieldheader"
+            ItemStyle-CssClass="ccitem"
+            PagerStyle-CssClass="ccpager"
+            CommandRowStyle-CssClass="cccommand"
+            AlternatingRowStyle-CssClass="alt" 
+            AlternatingColumnStyle-CssClass="col" 
+            AutoGenerateColumns="False" 
+        AllowPaging="True" AutoGenerateRows="False" DataKeyNames="ID" 
+        DataSourceID="SqlDataSource1" DefaultMode="Insert">
         <Fields>
             <asp:BoundField DataField="name" HeaderText="Gecko Name" SortExpression="name" />
             <asp:BoundField DataField="gender" HeaderText="Gecko Gender" SortExpression="gender" />
@@ -43,6 +60,6 @@
             <asp:CommandField ShowInsertButton="True" />
         </Fields>
     </asp:DetailsView>
-
+    </center>
 </asp:Content>
 

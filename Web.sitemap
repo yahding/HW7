@@ -32,6 +32,7 @@
 
 		<siteMapNode url="~/search.aspx" title="Search"  description="" />
 
+    <siteMapNode url="~/contact.aspx" title="Contact Us"  description="" />
 
-	</siteMapNode>
+  </siteMapNode>
 </siteMap>
