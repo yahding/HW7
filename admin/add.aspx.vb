@@ -1,5 +1,5 @@
 ﻿
-Partial Class HW7_admin_add
+Partial Class admin_add
     Inherits System.Web.UI.Page
 
 End Class

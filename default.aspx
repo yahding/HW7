@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/HW7/MasterPage.master" AutoEventWireup="false" CodeFile="default.aspx.vb" Inherits="HW7_default" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="default.aspx.vb" Inherits="HW7_default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -16,7 +16,6 @@
 
    <p> Aenean tincidunt ultricies justo, quis ultrices urna auctor a. Suspendisse pellentesque commodo porttitor. Quisque ipsum massa, volutpat non vulputate et, aliquam nec arcu. Quisque diam metus, euismod sed blandit sit amet, consectetur eu sem. Praesent aliquet lectus felis, nec rhoncus lorem. Donec quam arcu, sollicitudin at aliquet sed, tincidunt a nisi. Etiam euismod vulputate sagittis. In ac lorem dui, vitae congue enim. Quisque fermentum, ligula quis iaculis gravida, urna quam iaculis enim, et accumsan risus nisl id nunc. Cras orci libero, mattis ut laoreet id, ornare non neque. Proin ultrices dolor quis tellus consequat tincidunt. Quisque id diam massa. Praesent rutrum ipsum quam. Maecenas vel ipsum id ipsum elementum faucibus a sit amet mauris. </p>
 
-   <p> Sed consequat sem non velit ultrices suscipit. Sed non cursus odio. Nam arcu augue, euismod at fermentum molestie, placerat quis mi. Sed ultricies nibh eu orci commodo ut tempor mauris ornare. Praesent diam dui, interdum nec mollis id, adipiscing suscipit nunc. Maecenas in diam quis neque tempus malesuada. Suspendisse sagittis leo molestie dolor fermentum porttitor. Maecenas euismod sem sit amet nulla tristique id lacinia nisl venenatis. Fusce vitae mi ut massa placerat bibendum. Fusce commodo diam quis nisl dignissim ac aliquet ante tristique. Curabitur sit amet odio vitae justo tincidunt mollis. Aliquam venenatis massa sit amet libero vestibulum ut ullamcorper ante lobortis. </p>
 
 
 </asp:Content>

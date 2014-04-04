@@ -16,13 +16,14 @@
     <div id="container">
         <div id="header">
             
-            <h1>Gecko Warehouse</h1>
-            <asp:Image Class="hdr_img"  ID="Image1" runat="server" ImageUrl="~/HW7/logo/geckoboy.jpg" />
+            <h1>Gecko Warehouse<asp:Image Class="hdr_img"  ID="Image1"  runat="server" ImageUrl="~/logo/geckoboy.jpg" height="70px" Width="70px" />
+            </h1>
 
         </div>
         <div id="menu">
+             
                 <div id="loginpart" >
-                      <asp:LoginStatus ID="LoginStatus1" runat="server" CssClass="level1"/>
+                      <asp:LoginStatus ID="LoginStatus1" runat="server"  />
                 </div>
 
                 <div id="menutitle">
@@ -35,15 +36,10 @@
             </asp:Menu> 
 
             <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false"  />
-            
+             
           </div> 
             
-          <div id="date">
-                       
-                <asp:Label ID="lbl_date" runat="server" Text="Label"></asp:Label> 
-                
-           <!-- Close the date div -->
-         </div>   
+         
         </div>
 
         
@@ -57,7 +53,17 @@
         </div>
         
         <div id="footer">
-            
+          
+                       
+                <asp:Label ID="lbl_date" runat="server" Text=""></asp:Label> 
+                
+           <!-- Close the date div -->
+       
+                <br />
+          <p> &copy; <asp:Label ID="lblCopyD" runat="server" Text="">
+            </asp:Label>&nbsp;Yahong Ding &nbsp;6K:183&nbsp;Software&nbsp;Design&nbsp;&amp;&nbsp;Development
+          </p>
+
         </div> 
 
     </div>

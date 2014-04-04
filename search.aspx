@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/HW7/MasterPage.master" AutoEventWireup="false" CodeFile="search.aspx.vb" Inherits="HW7_search" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="search.aspx.vb" Inherits="HW7_search" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     Searching your gecko

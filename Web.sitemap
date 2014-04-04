@@ -14,9 +14,8 @@
 
 		<siteMapNode url="~/sales/sales.aspx" title="Sales"  description="" >
 
-			<siteMapNode url="~/sales/rent.aspx" title="Rent an Item"  description="" />
-			<siteMapNode url="~/sales/return.aspx" title="Return an Item"  description="" />
-
+			<siteMapNode url="~/sales/detailview.aspx" title="View Item Detail"  description="" />
+			
 		</siteMapNode>
 
 		<siteMapNode url="~/customer/customer.aspx" title="Customer"  description="" >
